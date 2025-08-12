@@ -5,15 +5,12 @@ import ContactStrip from '@/components/contact-strip'
 import { getGalleryImagesServer } from '@/lib/gallery'
 
 export default async function HomePage() {
-  // Load gallery images for preview and hero
+  // Load gallery images for preview
   const galleryImages = await getGalleryImagesServer()
-  
-  // Use first image as hero background if available
-  const heroImage = galleryImages.length > 0 ? galleryImages[0] : undefined
 
   return (
     <div className="pt-16">
-      <Hero heroImage={heroImage} />
+      <Hero />
       <Services />
       <GalleryPreview images={galleryImages} />
       <ContactStrip />

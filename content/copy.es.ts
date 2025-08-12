@@ -1,6 +1,6 @@
 export const COPY = {
   brand: {
-    name: "Coche de Boda",
+    name: "Un Paseo para Recordar",
     tagline: "Citroën DS 23 Pallas 'Tiburón'"
   },
   nav: { 
